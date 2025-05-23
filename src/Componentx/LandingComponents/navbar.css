@@ -1,0 +1,31 @@
+.hamburger{
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    width: 30px;
+    height: 2px;
+  
+    margin: 3px 0;
+    transition: 0.4s;
+}
+.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.open .hamburger-top{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.open .hamburger-middle{
+    opacity: 0;
+}
+.open .hamburger-bottom{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

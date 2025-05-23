@@ -50,14 +50,14 @@ function Collections() {
     }
   };
   return (
-    <section className="h-screen container mx-auto">
+    <section className=" container mx-auto ">
       <div className="px-2 py-6 w-full relative">
         <h2 className="text-primary font-heading text-3xl font-bold text-center underline decoration-primary decoration-1 underline-offset-8">
           Our collections
         </h2>
         <div
           ref={scrollRef}
-          className=" flex justify-evenly overflow-hidden mt-5 space-x-4 overflow-x-auto w-full"
+          className="hide-scrollbar rounded-xl flex justify-evenly overflow-hidden mt-5 space-x-4 overflow-x-auto w-full"
         >
           {collections.map((collection) => {
             return <CollectionCard collection={collection} />;

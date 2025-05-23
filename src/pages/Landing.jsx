@@ -13,7 +13,7 @@ export default function Landing() {
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-0" />
 
-        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-8">
+        <div className="relative z-9 flex flex-col items-center justify-center text-center text-white h-full px-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-md font-heading">
             Welcome to Crochetchic
           </h1>

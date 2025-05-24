@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <>
     {isOpen && <NavbarMenuMobile/> }
-    <nav className='container flex items-center  mx-auto p-6 justify-between px-8'>
+    <nav className='fixed z-50 w-full bg-white flex items-center  p-6 justify-between px-8'>
         
       <h1 className="text-2xl text-center font-bold text-primary">Crochetchic</h1>
       <div className="hidden md:flex items-center justify-center gap-4">

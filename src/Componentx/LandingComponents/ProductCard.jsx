@@ -4,7 +4,7 @@ import { Heart, ShoppingCart, Eye, Star, Zap } from 'lucide-react';
 
 function ProductCard({product}) {
 
-const [selectedVersion, setSelectedVersion] = useState(0);
+   const [selectedVersion, setSelectedVersion] = useState(0);
   const [selectedSize, setSelectedSize] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -13,7 +13,7 @@ const [selectedVersion, setSelectedVersion] = useState(0);
  
   return (
     <div 
-      className=" group relative  bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
+      className=" group relative  w-full flex-shrink-0 md:w-1/4  bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -44,7 +44,7 @@ const [selectedVersion, setSelectedVersion] = useState(0);
       </button>
 
       {/* Product Image */}
-      <div className="relative h-72 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
+      <div className="relative h-72 md:h-52 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
          <img src={currentVersion.image} alt="" />
         </div>

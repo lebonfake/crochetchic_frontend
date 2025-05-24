@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Componentx/LandingComponents/Navbar";
 import Collections from "../Componentx/LandingComponents/Collections";
+import BestSellers from "../Componentx/LandingComponents/BestSellers";
 export default function Landing() {
   return (
     <>
@@ -30,6 +31,7 @@ export default function Landing() {
         </div>
       </section>
      <Collections></Collections>
+     <BestSellers></BestSellers>
 
     </>
   );
